@@ -5,23 +5,29 @@
 }
 
 section {
-    height: 100vh;
-    background-color: darkkhaki;
+    background-color: beige;
 }
 
 .container {
     width: 70%;
     margin: 0 auto;
+    padding: 50px 0;
 }
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
 }
 
 h1 {
-    margin: 50px;
+    margin: 5px;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -33,19 +39,63 @@ label {
 input {
     margin-bottom: 20px;
     padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 button {
     padding: 10px 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 6px;
     color: white;
+    cursor: pointer;
     background-color: brown;
+}
+
+.add {
+    background-color: green;
+}
+
+.read {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .books {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    margin-top: 40px;
+    margin-top: 80px;
+    gap: 100px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 5px black;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.book-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.book-author {
+    font-size: 16px;
+}
+
+.book-pages {
+    font-size: 16px;
+}
+
+.book-img {
+    max-height: 60%;
 }
